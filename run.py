@@ -60,7 +60,6 @@ class Run():
             else:
                 time.sleep(1800)
 
-
     def run(self):
         task_list = [self.generate_ids, CrawlerProxy().run, Producer().run, Consumer().run]
         ps = []

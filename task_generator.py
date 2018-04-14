@@ -131,7 +131,7 @@ class Task_Producer():
 
         loop = asyncio.get_event_loop()
         loop.run_until_complete(self.crawler_entry())
-        loop.close()
+        # loop.close()
 
 
     def __exit__(self, exc_type, exc_val, exc_tb):

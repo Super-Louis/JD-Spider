@@ -96,7 +96,7 @@ class Consumer:
 
     def run(self):
         ps = list()
-        for i in range(2):
+        for i in range(3):
             p = multiprocessing.Process(target=self.worker, args=())
             ps.append(p)
             p.start()

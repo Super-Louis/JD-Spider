@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JD-Spider.iml" filepath="$PROJECT_DIR$/.idea/JD-Spider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Machine_Learning/.idea/ML.iml" filepath="$PROJECT_DIR$/../Machine_Learning/.idea/ML.iml" />
     </modules>
   </component>
 </project>

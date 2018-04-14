@@ -118,7 +118,7 @@ class Producer:
                 'id': id,
                 'comments': json.loads(comments)
             }
-            l.info('get message: {}'.format(message))
+            l.info('get message: {}'.format(message['id']))
             await self.mq.put('jd_phone',json.dumps(message))
 
     async def tasks(self):
@@ -138,7 +138,7 @@ class Producer:
 
     def run(self):
         ps = list()
-        for i in range(2):
+        for i in range(3):
             p = multiprocessing.Process(target=self.worker, args=())
             ps.append(p)
             p.start()

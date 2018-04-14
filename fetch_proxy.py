@@ -25,7 +25,7 @@ class CrawlerProxy():
         self.mq = await AsyncMqSession()
         while True:
             size = await self.queue_size()
-            if size < 1000:
+            if size < 500:
                 l.info("Proxies are not enough. Get and check proxies...")
                 # proxy_list = []
                 try:
