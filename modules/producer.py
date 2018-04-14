@@ -7,12 +7,12 @@ import urllib
 import motor.motor_asyncio
 import time
 import aioredis
-from spider_filter import BloomFilter
 from logging.handlers import TimedRotatingFileHandler
 import multiprocessing
 from spider_queue import *
 from db_config import DB
 from lxml import etree
+import json
 
 basic_info_url = 'https://item.jd.com/{}.html'
 price_url = 'https://p.3.cn/prices/mgets?skuIds=J_{}'
@@ -138,7 +138,7 @@ class Producer:
 
     def run(self):
         ps = list()
-        for i in range(5):
+        for i in range(2):
             p = multiprocessing.Process(target=self.worker, args=())
             ps.append(p)
             p.start()
