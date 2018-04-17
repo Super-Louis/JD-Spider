@@ -5,5 +5,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="ML" />
+    <orderEntry type="module" module-name="daily_import" />
+    <orderEntry type="module" module-name="chewbacca" />
   </component>
 </module>

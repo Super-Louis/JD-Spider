@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JD-Spider.iml" filepath="$PROJECT_DIR$/.idea/JD-Spider.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Machine_Learning/.idea/ML.iml" filepath="$PROJECT_DIR$/../Machine_Learning/.idea/ML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../chewbacca/.idea/chewbacca.iml" filepath="$PROJECT_DIR$/../chewbacca/.idea/chewbacca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../daily_import/.idea/daily_import.iml" filepath="$PROJECT_DIR$/../daily_import/.idea/daily_import.iml" />
     </modules>
   </component>
 </project>

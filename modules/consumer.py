@@ -87,7 +87,11 @@ class Consumer:
         while True:
             tasks = [self.get_details() for _ in range(100)]
             print(len(tasks))
-            await asyncio.gather(*tasks)
+            try:
+                await asyncio.gather(*tasks)
+            except Exception as e:
+                l.info(e)
+                pass
 
     def worker(self):
         loop = asyncio.get_event_loop()
